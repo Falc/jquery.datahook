@@ -1,0 +1,30 @@
+{
+  "name": "jquery.datahook",
+  "description": "Syntactic sugar for jQuery selection using data-hook attributes.",
+  "version": "1.0.0-dev",
+  "homepage": "https://github.com/Falc/jquery.datahook",
+  "authors": [
+    {
+      "name": "Will Boyd",
+      "email": "will@codersblock.com",
+      "homepage": "http://codersblock.com"
+    },
+    {
+      "name": "Aitor García",
+      "email": "aitor.falc@gmail.com",
+      "homepage": "http://aitorgarcia.org"
+    }
+  ],
+  "license": "MIT",
+  "main": [
+    "src/jquery.datahook.js"
+  ],
+  "keywords": [
+    "jquery",
+    "hook",
+    "selector"
+  ],
+  "ignore": [
+    "**/.*"
+  ]
+}

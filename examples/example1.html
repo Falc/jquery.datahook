@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>jquery.datahook | Example 1</title>
+        <style>
+            body {text-align: center;}
+            body > div {display: inline-block;}
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>jquery.datahook (example)</h1>
+            <div>
+                <button data-hook="block-1-toggle">Toggle Block #1</button>
+                <button data-hook="block-collapse">Collapse All Blocks</button>
+                <button data-hook="block-expand">Expand All Blocks</button>
+            </div>
+
+            <h2>Block #1</h2>
+            <textarea data-hook="block-1 collapsable-block" cols="70" rows="5" wrap="off" readonly="readonly">
+// Simple hook interaction
+$.hook('block-1-toggle').on('click', function() {
+  $.hook('block-1').toggle();
+});
+            </textarea>
+
+            <h2>Block #2</h2>
+            <textarea data-hook="block-2 collapsable-block" cols="70" rows="16" wrap="off" readonly="readonly">
+// Collapses all elements with data-hook="collapsable-block"
+function collapseAllBlocks() {
+  $.hook('collapsable-block').hide();
+}
+
+// Expands all elements with data-hook="collapsable-block"
+function expandAllBlocks() {
+  $.hook('collapsable-block').show();
+}
+
+// Connects collapseAllBlocks() to every "block-collapse" hook
+$.hook('block-collapse').on('click', collapseAllBlocks);
+
+// Connects expandAllBlocks() to every "block-collapse" hook
+$.hook('block-expand').on('click', expandAllBlocks);
+            </textarea>
+        </div>
+
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="../dist/jquery.datahook.min.js"></script>
+        <script>
+        $(document).ready(function() {
+          $.hook('block-1-toggle').on('click', function() {
+            $.hook('block-1').toggle();
+          });
+
+          function collapseAllBlocks() {
+            $.hook('collapsable-block').hide();
+          }
+
+          function expandAllBlocks() {
+            $.hook('collapsable-block').show();
+          }
+
+          $.hook('block-collapse').on('click', collapseAllBlocks);
+          $.hook('block-expand').on('click', expandAllBlocks);
+        });
+        </script>
+    </body>
+</html>

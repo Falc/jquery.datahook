@@ -1,7 +1,7 @@
 {
   "name": "jquery.datahook",
   "description": "Syntactic sugar for jQuery selection using data-hook attributes.",
-  "version": "1.0.0-dev",
+  "version": "1.0.0",
   "homepage": "https://github.com/Falc/jquery.datahook",
   "authors": [
     {
@@ -25,6 +25,10 @@
     "selector"
   ],
   "ignore": [
-    "**/.*"
+    "**/.*",
+    "examples",
+    "CHANGELOG.md",
+    "README.md",
+    "Gruntfile.js"
   ]
 }

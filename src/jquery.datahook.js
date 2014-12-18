@@ -9,7 +9,7 @@
  * - Will Boyd (will@codersblock.com)
  * - Aitor García (aitor.falc@gmail.com)
  *
- * Version: 1.0.0-dev
+ * Version: 1.0.0
  * License: MIT (https://github.com/Falc/jquery.datahook/blob/master/LICENSE)
  */
 (function(factory) {

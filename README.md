@@ -27,7 +27,7 @@ It extends jQuery adding the `$.datahook()` method.
 
 * **$.datahook()**: Selects all the hook elements.
 * **$.datahook('*')**: Same as `$.datahook()`.
-* **$.datahook('name')**: Selects any element with `data-hook="name"`.
+* **$.datahook('name')**: Selects elements with a `data-hook` attribute containing `name` (a `data-hook` attribute can be a single name or a space-separated list of names).
 
 Alternatively, it is possible to use the `$.hook()` alias.
 
